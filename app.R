@@ -138,7 +138,7 @@ server <- function(input, output) {
       error<-abs(test$nrow-prediction)
       results <- data.frame(Unidad=test$unidad,ciclo=2016,Proyeccion=prediction, Real=test$nrow, error=error)
       output$results <- renderTable(results)
-      
+       
     }
   })
 }
